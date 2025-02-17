@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Machine Learning - DigiCrop Agriculture</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .bg-custom {
+            background-color: #8cb354 !important;
+        }
+
+        .largest-text-size {
+            font-size: 50px;
+        }
+
+        .section-heading {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .benefit-list li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .sector-list li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .section-padding {
+            padding: 50px 0;
+        }
+        .ml-box {
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ml-box h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.ml-box p {
+    font-size: 16px;
+    color: white;
+}
+
+.ml-box:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#supervised:hover {
+    background-color: #7a9b2e;
+}
+
+#unsupervised:hover {
+    background-color: #2980b9;
+}
+
+#reinforcement:hover {
+    background-color: #7a9b2e;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DigiCrop Agriculture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#what-is-ml">What is ML</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sectors">Sectors</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-custom text-white text-center py-5 mt-5" style="background-image: url('../static/images/img3.jpg');
+    background-size: cover; background-position: center; height:60vh ;
+     justify-content: center; text-align: center; align-items: center;">
+        <h1 class="largest-text-size mt-5">Machine Learning</h1>
+        <p>Learn, Innovate, and Lead the Future with Cutting-Edge Machine Learning Models</p>
+        <a href="https://d2429wjygrihoh.cloudfront.net/" class="btn btn-light btn-lg">Visit Website</a>
+    </header>
+    
+
+    <!-- What is Machine Learning Section -->
+    <section id="what-is-ml" class="container text-center section-padding">
+        <h2 class="section-heading">What is Machine Learning?</h2>
+        <p class="lead">Machine learning (ML) is a branch of artificial intelligence that allows computers to learn and
+            make decisions from data without explicit programming. It involves algorithms and statistical models that
+            help systems improve their performance on specific tasks over time.Machine Learning (ML) is a subset of Artificial Intelligence (AI)
+             that empowers systems to automatically learn from data, adapt, and improve over time without the need for explicit programming.
+              Unlike traditional programming, where specific instructions are coded for every task,
+               machine learning allows the system to find patterns and insights on its own by analyzing data.
+            Machine Learning is powered by algorithms that use statistical models to make predictions or decisions.
+             These algorithms rely on large amounts of data to train themselves, iterating and refining their models to increase accuracy.
+              The more data the system processes, the better it becomes at making predictions or automating tasks.</p>
+    </section>
+
+    <section id="ml-image" class="container py-2">
+        <h2 class="text-center">Simple Representation of Machine Learning Lifecycle</h2>
+        <div class="text-center">
+            <img src="../static/images/img1.jpg" alt="Machine Learning Process" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="image-detail" class="container py-5 mt-3">
+        <h2 class="text-center section-heading">Lifecycle of Machine Learning</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">1. Data Collection</h4>
+                        <p class="card-text">Data is gathered from various sources like databases, sensors, or external data streams. The data can be structured (tables, CSV), unstructured (text, images), or semi-structured (JSON, XML), providing a comprehensive dataset for training.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-cogs fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">2. Data Preprocessing</h4>
+                        <p class="card-text">Data is cleaned and transformed. This includes handling missing values, normalizing features, and encoding categorical data to prepare it for analysis. Proper preprocessing ensures better model performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-puzzle-piece fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">3. Model Selection</h4>
+                        <p class="card-text">The right algorithm is chosen based on the problem type. For classification tasks, decision trees or SVMs may be used. Regression tasks could involve linear regression or neural networks to make predictions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-brain fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">4. Model Training</h4>
+                        <p class="card-text">The model is trained using the processed data. It learns the relationships between input and output, and adjusts parameters to minimize error using techniques like gradient descent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-check-circle fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">5. Model Evaluation</h4>
+                        <p class="card-text">Once trained, the model’s performance is evaluated on unseen data using metrics like accuracy, precision, recall, or mean squared error to ensure it performs well in real-world scenarios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-sliders-h fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">6. Hyperparameter Tuning</h4>
+                        <p class="card-text">The model’s performance is fine-tuned by adjusting hyperparameters like learning rate or number of hidden layers. Techniques like grid search or random search are used to find the optimal settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">7. Predictions</h4>
+                        <p class="card-text">Once optimized, the model is used to make predictions on new data. These could be classifications (e.g., cat vs. dog) or numerical outputs (e.g., stock prices).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">8. Model Deployment</h4>
+                        <p class="card-text">The trained model is deployed to a production environment where it can make real-time predictions on incoming data, assisting in decision-making processes or automating tasks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x mb-3" style="color: #8cb354;"></i>
+                        <h4 class="card-title">9. Monitoring & Maintenance</h4>
+                        <p class="card-text">After deployment, the model's performance is continuously monitored. If the accuracy drops, retraining or adjustments may be required to adapt to new data or changing conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Sectors Using Machine Learning -->
+    <section id="types-of-ml" class="container section-padding bg-light">
+        <h2 class="section-heading text-center">Types of Machine Learning</h2>
+        <div class="row text-center">
+            <!-- Supervised Learning -->
+            <div class="col-md-4">
+                <a href="{{ url_for('supervised_learning') }}" class="ml-box" id="supervised" style="background-color: #8cb354; display: block; text-decoration: none; color: inherit;">
+                    <h3>Supervised Learning</h3>
+                    <p>Supervised learning involves training a model on a labeled dataset, where the model learns to map input data to the correct output.</p>
+                </a>
+            </div>
+            <!-- Unsupervised Learning -->
+            <div class="col-md-4">
+                <a href="unsupervised-learning.html" class="ml-box" id="unsupervised" style="background-color: #3498db; display: block; text-decoration: none; color: inherit;">
+                    <h3>Unsupervised Learning</h3>
+                    <p>Unsupervised learning deals with unlabeled data, and the model tries to find patterns, clusters, or structure in the data.</p>
+                </a>
+            </div>
+            <!-- Reinforcement Learning -->
+            <div class="col-md-4">
+                <a href="reinforcement-learning.html" class="ml-box" id="reinforcement" style="background-color: #8cb354; display: block; text-decoration: none; color: inherit;">
+                    <h3>Reinforcement Learning</h3>
+                    <p>Reinforcement learning trains a model through a system of rewards and punishments, enabling it to make decisions in complex environments.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Apply Section -->
+    <section id="feedback" class="container py-5" style="background-image: url('../static/images/img4.jpg');
+    background-size: cover; background-position: center; height:100vh ;
+     justify-content: center; text-align: center; align-items: center;">
+        <h2 class="text-center">FEEDBACK</h2>
+        <form id="leadForm" class="mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <label class="form-label" style="text-align: left;">Full Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Topic</label>
+                <select class="form-select" name="topic" required>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="AI and Robotics">AI and Robotics</option>
+                    <option value="Deep Learning">Deep Learning</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-50">Submit</button>
+        </form>
+        <p id="responseMsg" class="text-center mt-3"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 DigiCrop Agriculture | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            let formData = new FormData(this);
+
+            try {
+                let response = await fetch("http://127.0.0.1:5000/submit", {
+                    method: "POST",
+                    body: formData
+                });
+
+                let result = await response.json();
+                document.getElementById("responseMsg").textContent = result.message;
+                this.reset();  // Clear form after submission
+            } catch (error) {
+                document.getElementById("responseMsg").textContent = "Submission failed. Try again!";
+            }
+        });
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll("nav a").forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                if (this.getAttribute("href").startsWith("#")) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
